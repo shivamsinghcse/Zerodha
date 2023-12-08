@@ -87,8 +87,8 @@ export function Navbar() {
             </div>
             <div className="border-solid border-b-2 border border-t-0 border-x-0">
               <ul className="list-none text-gray-800  grid grid-cols-2 h-full  z-10">
-                {items.map((item: any) => (
-                  <div className="flex">
+                {items.map((item: any , index: number) => (
+                  <div className="flex"  key={index}>
                     <Image
                       src={item.src}
                       alt={item.name}
